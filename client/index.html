@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Management</title>
+    <script
+      type="text/javascript"
+      nonce="3297e4a2716847b1aa28442f127"
+      src="//local.adguard.org?ts=1755157330935&amp;type=content-script&amp;dmn=bjt2dkgc09w8q1m0.canva-hosted-embed.com&amp;url=https%3A%2F%2Fbjt2dkgc09w8q1m0.canva-hosted-embed.com%2Fcodelet%2FAAEAEGJqdDJka2djMDl3OHExbTAAAAAAAZistYsSVJSa09ZyW98SG1eI2kRg5gaUMuAEgoD9QHUwS_DXWsg%2Findex.html&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"
+    ></script>
+    <script
+      type="text/javascript"
+      nonce="3297e4a2716847b1aa28442f127"
+      src="//local.adguard.org?ts=1755157330935&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animate cards on load
+        const cards = document.querySelectorAll(".card-hover");
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(20px)";
+            card.style.transition = "all 0.6s ease";
+
+            setTimeout(() => {
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+            }, 100);
+          }, index * 100);
+        });
+      });
+    </script>
+  </body>
+</html>

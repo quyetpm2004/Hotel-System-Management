@@ -1,0 +1,18 @@
+.login-container {
+  width: 500px;
+  height: 400px;
+  margin: 100px auto;
+  padding: 40px 20px;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.08);
+
+  .login-header {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e3e1e1;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
